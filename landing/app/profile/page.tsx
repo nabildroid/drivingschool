@@ -1,11 +1,11 @@
 export default function Page() {
   return (
-    <div className="w-full h-screen bg-slate-100">
-      <div className="mx-auto flex flex-col h-screen max-w-sm lg:shadow-md w-full ">
-        <div className="flex justify-between text-lg items-center bg-black px-3 py-1.5">
+    <div className="h-screen w-full bg-slate-100">
+      <div className="mx-auto flex h-screen w-full max-w-sm flex-col lg:shadow-md">
+        <div className="flex items-center justify-between bg-black px-3 py-1.5 text-lg">
           <a
             href="#"
-            className="shrink-0 px-2 py-0.5 rounded-lg font-bold text-black bg-yellow-400"
+            className="shrink-0 rounded-lg bg-yellow-400 px-2 py-0.5 font-bold text-black"
           >
             0571895845
           </a>
@@ -15,31 +15,31 @@ export default function Page() {
           </a>
         </div>
 
-        <div className="z-20 mt-4 px-3 select-none ">
-          <div className="flex relative aspect-[23/10] overflow-hidden ring-4 ring-black rounded-xl shadow-lg">
+        <div className="z-20 mt-4 select-none px-3">
+          <div className="relative flex aspect-[23/10] overflow-hidden rounded-xl shadow-lg ring-4 ring-black">
             <img
               src="/card.png"
-              className="absolute w-full  h-full rounded-xl inset-0"
+              className="absolute inset-0 h-full w-full rounded-xl"
             />
 
-            <div className="absolute w-4 left-10 -inset-y-2 bg-black/10" />
+            <div className="absolute -inset-y-2 left-10 w-4 bg-black/10" />
 
-            <span className="absolute bg-clip-text bg-gradient-to-r from-[#CCA5A5] to-[#986A40]  text-4xl inset-x-0 text-center text-transparent mix-blend-color-burn opacity-10 ">
+            <span className="absolute inset-x-0 bg-gradient-to-r from-[#CCA5A5] to-[#986A40] bg-clip-text text-center text-4xl text-transparent opacity-10 mix-blend-color-burn">
               Salime Autoecole
             </span>
-            <span className="absolute bottom-0 bg-clip-text bg-gradient-to-r from-[#CCA5A5] to-[#986A40]  text-4xl inset-x-0 text-center text-transparent mix-blend-color-burn opacity-10 ">
+            <span className="absolute inset-x-0 bottom-0 bg-gradient-to-r from-[#CCA5A5] to-[#986A40] bg-clip-text text-center text-4xl text-transparent opacity-10 mix-blend-color-burn">
               Salime Autoecole
             </span>
-            <span className="absolute top-1/2 -translate-y-1/2 bg-clip-text bg-gradient-to-r from-[#CCA5A5] to-[#986A40]  text-4xl inset-x-0 text-center text-transparent mix-blend-color-burn opacity-10 ">
+            <span className="absolute inset-x-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#CCA5A5] to-[#986A40] bg-clip-text text-center text-4xl text-transparent opacity-10 mix-blend-color-burn">
               Salime Autoecole
             </span>
 
             <img
               src="/qr.png"
-              className="relative mix-blend-darken mx-2 my-4"
+              className="relative mx-2 my-4 mix-blend-darken"
             />
 
-            <div className="relative text-left flex-1 ml-2 my-5 inline-flex flex-col">
+            <div className="relative my-5 ml-2 inline-flex flex-1 flex-col text-left">
               <h1 className="text-xl font-bold">Card</h1>
 
               <span className="flex-1" />
@@ -50,23 +50,22 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="relative flex-1 z-10">
-          <div className="absolute top-0 w-3 left-1/2 -translate-x-1/2 -inset-y-6 bg-black" />
-          <div className="absolute z-20 top-0 inset-x-0 h-4 from-slate-100 to-transparent bg-gradient-to-b" />
+        <div className="relative z-10 flex-1">
+          <div className="absolute -inset-y-6 left-1/2 top-0 w-3 -translate-x-1/2 bg-black" />
+          <div className="absolute inset-x-0 top-0 z-20 h-4 bg-gradient-to-b from-slate-100 to-transparent" />
 
-          <div className="absolute z-10 inset-0   flex flex-col gap-4  overflow-y-auto py-4">
+          <div className="absolute inset-0 z-10 flex flex-col gap-4 overflow-y-auto py-4">
             {Array(10)
               .fill("")
               .map(() => (
-                <div className="relative z-10 bg-white border border-zinc-300 p-4"></div>
+                <div className="relative z-10 border border-zinc-300 bg-white p-4"></div>
               ))}
           </div>
 
-          <div className="absolute z-20 bottom-0 inset-x-0 h-4 from-slate-100 to-transparent bg-gradient-to-t" />
-
+          <div className="absolute inset-x-0 bottom-0 z-20 h-4 bg-gradient-to-t from-slate-100 to-transparent" />
         </div>
 
-        <div className="z-20 h-40 bg-black/85 backdrop-blur rounded-t-2xl "></div>
+        <div className="z-20 h-40 rounded-t-2xl bg-black/85 backdrop-blur"></div>
       </div>
     </div>
   );
