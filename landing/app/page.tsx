@@ -13,7 +13,7 @@ export default function Home() {
       </div>
 
       <nav className="py-2 z-30 bg-black sticky top-0">
-        <div className="container justify-between mx-auto text-lg text-white flex items-center">
+        <div className="px-3 lg:px-0 lg:container justify-between mx-auto lg:text-lg text-white flex items-center">
           <a className="space-x-reverse  rounded-md bg-yellow-400 text-black py-1 px-2 flex space-x-2 items-center">
             <span>0758469875</span>
             <PhoneIcon />
@@ -37,7 +37,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <a className="font-bold" href="#">
+          <a className="font-bold shrink-0" href="#">
             Salim Autoecole
           </a>
         </div>

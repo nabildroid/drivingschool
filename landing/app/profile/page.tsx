@@ -1,7 +1,10 @@
+import { CircleSlashIcon, ThumbsUpIcon } from "lucide-react";
+import BottomDrawer from "./components/bottomDrawer";
+
 export default function Page() {
   return (
-    <div className="h-screen w-full bg-slate-100">
-      <div className="mx-auto flex h-screen w-full max-w-sm flex-col lg:shadow-md">
+    <div className="h-lvh w-full bg-slate-100">
+      <div className="mx-auto flex h-full w-full max-w-sm flex-col lg:shadow-md">
         <div className="flex items-center justify-between bg-black px-3 py-1.5 text-lg">
           <a
             href="#"
@@ -51,21 +54,33 @@ export default function Page() {
         </div>
 
         <div className="relative z-10 flex-1">
-          <div className="absolute -inset-y-6 left-1/2 top-0 w-3 -translate-x-1/2 bg-black" />
+          <div className="absolute -inset-y-6 left-1/2 top-0 w-2 -translate-x-1/2 bg-black" />
           <div className="absolute inset-x-0 top-0 z-20 h-4 bg-gradient-to-b from-slate-100 to-transparent" />
 
-          <div className="absolute inset-0 z-10 flex flex-col gap-4 overflow-y-auto py-4">
+          <div
+            dir="ltr"
+            className="absolute inset-0 z-10 flex flex-col pb-20 gap-4 overflow-y-auto px-2 py-4"
+          >
             {Array(10)
               .fill("")
               .map(() => (
-                <div className="relative z-10 border border-zinc-300 bg-white p-4"></div>
+                <div className="relative z-10 flex items-center justify-between rounded-md border border-zinc-200 bg-white px-4 py-1 shadow-sm">
+                  <div>
+                    <p className="text-md font-bold">11 am</p>
+                    <p className="text-md font-bold text-zinc-600">
+                      15/01/2025
+                    </p>
+                  </div>
+                  <p className="text-md font-bold">Code</p>
+                </div>
               ))}
           </div>
 
           <div className="absolute inset-x-0 bottom-0 z-20 h-4 bg-gradient-to-t from-slate-100 to-transparent" />
         </div>
 
-        <div className="z-20 h-40 rounded-t-2xl bg-black/85 backdrop-blur"></div>
+
+        <BottomDrawer startHeightPx="148px" />
       </div>
     </div>
   );
