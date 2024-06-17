@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
+    <html className="scroll-smooth" lang="ar" dir="rtl">
       <body className={rubik.className}>{children}</body>
     </html>
   );
